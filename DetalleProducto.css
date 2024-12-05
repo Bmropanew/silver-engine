@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #17a2b8;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto-detalle {
+    display: flex;
+    gap: 30px;
+}
+
+.producto-detalle .imagen-container {
+    flex: 1;
+    text-align: center;
+    max-width: 100%; /* Limita el ancho máximo */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+    border-radius: 10px; /* Mantiene las esquinas redondeadas */
+}
+
+.producto-detalle .imagen-container img {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional, para redondear bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Opcional, ajusta cómo la imagen se recorta dentro del contenedor */
+}
+
+.producto-detalle .imagen-container h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #444;
+    text-align: left;
+}
+
+.producto-detalle .detalles-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producto-detalle .detalles-container p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.producto-detalle .detalles-container p strong {
+    font-weight: bold;
+}
+
+.carrito {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrito label {
+    font-size: 1rem;
+    color: #495057;
+}
+
+.carrito input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.carrito button {
+    background-color: #17a2b8;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrito button:hover {
+    background-color: #138496;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+.imagen-container img:hover {
+    transform: scale(1.1); /* Ajusta el zoom según sea necesario */
+    filter: brightness(1.1) contrast(1.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}

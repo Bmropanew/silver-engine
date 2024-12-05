@@ -1,0 +1,321 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6; 
+    max-width: 100%;
+    overflow-x: hidden; 
+    background-image: url('img/nosotros.jpg') ;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+ 
+}
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+  
+    color: rgb(0, 0, 0); 
+    padding: 2rem 0; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    animation: fadeIn 1s ease-in-out;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+nav {
+    background-color: #000000; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline-block; 
+    position: relative; 
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+
+
+/* Submenú */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #455331;
+    padding: 0;
+    list-style: none;
+    min-width: 90px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    width: 90px;
+    padding: 10px 20px;
+    display: flex;
+    color: #fff;
+    text-align: left;
+    background-color: #093e85;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+nav ul li a:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+nav ul li a i {
+    margin-right: 8px; 
+}
+
+nav ul li ul li a:hover {
+    background-color: #1883f5;
+    border-radius: 0;
+
+}
+
+/* Mostrar el submenú cuando el ratón esté sobre el elemento padre */
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li a i {
+    margin-right: 8px; 
+}
+
+
+.tit-drama {
+    background-color: rgba(0, 0, 0, 0.479); 
+    padding: 2rem; 
+    margin-bottom: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+.tit-drama h1{
+
+    color: white;
+}
+
+.tit-drama:hover{
+    transform: scale(1.03); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+.pag-te {
+    max-height: 200px; 
+    overflow-y: auto; 
+    padding: 15px;
+    background-color:  rgba(0, 0, 0, 0.219); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+}
+
+
+.pag-te p{
+    margin: 0;
+    color: white;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-ce; 
+    max-width: 95%; 
+    border-radius: 3rem;
+    margin: 0 auto; 
+    background-color:#0000007c;
+    margin-bottom: 40px;
+    
+}
+
+
+.texto-ayuda {
+    flex: 1; 
+    padding: 60px; 
+    max-width: 50%; 
+    text-align: justify;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+}
+
+.texto-ayuda h2 {
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #ffffff; 
+    margin-bottom: 15px; 
+}
+
+.texto-ayuda p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #ffffff; 
+
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    max-width: 400px;
+    margin: 20px auto; 
+    flex: 1; 
+    padding: 20px; 
+    max-width: 650px; 
+    margin: 0 auto; 
+    border-left: 1px solid #ccc; 
+    background-color: #f4f4f4;;
+    border-radius: 3rem; 
+    margin-bottom: 50PX;
+    margin-top: 50px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    
+    
+}
+
+.formulario-container:hover{
+    transform: scale(1.03); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+.contacto{ 
+    transition: transform 0.3s, box-shadow 0.3s; 
+
+}
+.contacto:hover{
+    transform: scale(1.03); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap:1 rem; 
+    width: 75%; 
+}
+
+label {
+    margin-bottom: 2rem; 
+    margin-top: 1rem;
+}
+
+input, textarea, select {
+    padding: 0.7rem; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+    
+}
+textarea {
+    resize: none; 
+    overflow: auto; 
+    min-height: 100px; 
+}
+
+button {
+    padding: 0.9rem 2.5rem; 
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+h2, h3 {
+    color: #333; 
+}
+
+
+section img {
+    display: block;    
+    margin: 0 auto;    
+    max-width: 50%;    
+    height: auto;      
+    transition: transform 0.3s ease-in-out;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+button {
+    padding: 0.7rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #000000; 
+    color: white; 
+    text-align: center; 
+    margin: 0; 
+    width: 100%; 
+    clear: both; 
+    height: 60px;
+    padding: 1rem 0 0.5rem;
+    
+}

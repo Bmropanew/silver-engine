@@ -1,0 +1,183 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6; 
+    max-width: 100%;
+    overflow-x: hidden; 
+    background-image: url('img/nosotros.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+header {
+    background-color:  #0000007c; 
+    color: rgb(0, 0, 0); 
+    padding: 2rem 0; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    animation: fadeIn 1s ease-in-out;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+nav {
+    background-color: #000000; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline-block; 
+    position: relative; 
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+
+
+/* Submenú */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0000009a;
+    padding: 0;
+    list-style: none;
+    min-width: 90px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    width: 90px;
+    padding: 10px 20px;
+    display: flex;
+    color: #fff;
+    text-align: left;
+    background-color: #093e85;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+nav ul li a:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+nav ul li a i {
+    margin-right: 8px; 
+}
+
+nav ul li ul li a:hover {
+    background-color: #1883f5;
+    border-radius: 0;
+
+}
+
+/* Mostrar el submenú cuando el ratón esté sobre el elemento padre */
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li a i {
+    margin-right: 8px; 
+}
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Somos{
+    background-color: #0000007c;
+    width: 80%;
+    border-radius: 3rem;
+    text-align: justify;
+    justify-content: center;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+.Somos h1  {
+    text-align: center; 
+    margin: 0; 
+    color: white;
+}
+.Somos p{
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+}
+
+
+
+.Video-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+video {
+    
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 3rem;
+    transition: transform 0.3s ease; 
+}
+
+video:hover {
+    transform: scale(1.1); 
+}
+
+footer {
+    background-color: #000000; 
+    color: white; 
+    text-align: center; 
+    margin: 0; 
+    width: 100%; 
+    clear: both; 
+    height: 60px;
+    padding: 1rem 0 0.5rem;
+    
+}

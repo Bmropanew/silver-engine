@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;   
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%; 
+    margin: 0; 
+    padding: 0; 
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #283318;
+    padding: 0;
+    list-style: none;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-align: left;
+    background-color: #2d3a1d;
+}
+
+nav ul li ul li a:hover {
+    background-color: #99ff00;
+    border-radius: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+
+
+
+.slider-box{
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+    overflow: hidden;
+    position: relative;
+
+}
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    transition: margin 1s ease;
+    animation: slide 10s infinite alternate ease-in-out;
+
+}
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.texto {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.texto h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    margin-bottom: 35px;
+}
+
+.texto p {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.slider-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%{margin-left: 0%;}    
+    20%{margin-left: 0%;}    
+
+    25%{margin-left: -100%;}    
+    45%{margin-left: -100%;}    
+
+    50%{margin-left: -200%;}    
+    70%{margin-left: -200%;}    
+    
+    75%{margin-left: -300%;}    
+    100%{margin-left: -300%;}    
+}
+
+
+
+.portada {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.portada img {
+    width: 1200px;
+    max-width: 100%; 
+    height: 250px; 
+}
+
+
+
+p{
+    color: rgb(0, 0, 0);
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+#cantidad-polera:hover {
+    border-color: #b300008c; 
+    background-color: #e9ecef; 
+}
+
+#cantidad-polera:focus {
+    outline: none; 
+    border-color: #02d9ff6c; 
+    background-color: #ffffff; 
+    box-shadow: 0 0 5px rgba(0, 238, 255, 0.466); 
+}
+
+.ofertas-mes {
+    background-color: #c0c0c05e;
+    border-radius: 1rem;
+    text-align: center;     
+    margin: 10px auto; 
+    max-width: 1200px; 
+    width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+
+.ofertas-mes:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ofertas-mes h1 {
+    
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #000000;
+    text-transform: uppercase; 
+    padding-bottom: 2px; 
+    margin: 0px;
+
+}
+
+
+.mujeres-niñas, .hombres-niños{
+    background-color: #c0c0c05e;
+    border-radius: 1rem;
+    text-align:center;     
+    margin: 10px auto; 
+    max-width: 1200px; 
+    width: 90%;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.hombres-niños h1{
+    color: #000000;
+    margin: 0px;
+    padding: 6px;
+ 
+}
+
+.mujeres-niñas h1{
+    color: #000000;
+    margin: 0px;
+    padding: 6px;
+
+ 
+}
+.mujeres-niñas:hover, .hombres-niños:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: #c0c0c05e;
+    padding: 2rem; 
+    margin-bottom: 30px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+section h1{
+    color: black;
+}
+
+section img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+section img {
+    display: block;    
+    margin: 0 auto;    
+    max-width: 50%;    
+    height: auto;      
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+}
+
+.grid-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+
+footer p{
+    color:white;
+}
+
+footer {
+    background-color: #000000;
+    padding: 10px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: auto; 
+    width: 100%; 
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero input,
+    .hero button {
+        width: 250px;
+    }
+
+    .info {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
